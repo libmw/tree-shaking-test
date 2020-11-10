@@ -1,0 +1,43 @@
+{
+  "name": "tree-shaking-test",
+  "version": "1.0.0",
+  "description": "test how treeShaking works",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.config.prod.js",
+    "build:report": "npm run build --report",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libmw/tree-shaking-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/libmw/tree-shaking-test/issues"
+  },
+  "homepage": "https://github.com/libmw/tree-shaking-test#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "ant-design-vue": "^2.0.0-beta.15",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "less-loader": "^7.0.2",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^15.9.5",
+    "webpack": "^5.4.0",
+    "webpack-bundle-analyzer": "^4.1.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.3.0"
+  }
+}
